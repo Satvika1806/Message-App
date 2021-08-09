@@ -26,20 +26,21 @@ public class Server extends JFrame{
         
         getContentPane().setBackground(Color.BLACK);
         setLayout(null);
-        setSize(700, 550);         
-        setLocation(50,100);            //to appear SERVER frame at location of 50,100 on our system
+        setSize(600, 550);  
+        setResizable(false);       
+        setLocation(25,50);            //to appear SERVER frame at location of 50,100 on our system
         setUndecorated(true);   
         
         p1 = new JPanel();      
         p1.setLayout(null);
         p1.setBackground(new Color(210, 82, 127));     
-        p1.setBounds(0,0, 700, 70);
+        p1.setBounds(0,0, 600, 70);
         add(p1);
         
         JLabel l1 = new JLabel("SERVER");       
         l1.setFont(new Font("Verdana", Font.BOLD, 18));
         l1.setForeground(Color.WHITE);
-        l1.setBounds(300, 15 , 250, 40); 
+        l1.setBounds(260, 15 , 250, 40); 
         p1.add(l1); 
 
         exit = new JButton("EXIT");
@@ -64,7 +65,7 @@ public class Server extends JFrame{
         
 
         a1 = new JTextArea();
-        a1.setBounds(10, 85, 680, 410);
+        a1.setBounds(10, 85, 580, 410);
         a1.setBackground(new Color(228,223,237)); 
         a1.setForeground(Color.BLACK);
         a1.setFont(new Font("Verdana", Font.PLAIN, 14));
@@ -73,14 +74,14 @@ public class Server extends JFrame{
         a1.setLineWrap(true);
         a1.setWrapStyleWord(true); 
         
-        sp.setBounds(10, 85, 680, 410);
+        sp.setBounds(10, 85, 580, 410);
         sp.getViewport().setBackground(Color.WHITE);
         sp.getViewport().add(a1);
         add(sp);
         
         
         t1 = new JTextField();    
-        t1.setBounds(10, 505, 580, 35);
+        t1.setBounds(10, 505, 480, 35);
         t1.setText("Type your message here");
         t1.setForeground(new Color(153,153,153));  
         t1.addFocusListener(new FocusAdapter() {
@@ -97,7 +98,7 @@ public class Server extends JFrame{
         add(t1);
    
         send = new JButton("Send");
-        send.setBounds(600, 505, 90, 35);
+        send.setBounds(500, 505, 90, 35);
         send.setBackground(new Color(0,204,0));
         send.setForeground(Color.BLACK);
         send.setFont(new Font("Verdana", Font.PLAIN, 14));
