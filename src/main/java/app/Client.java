@@ -29,26 +29,26 @@ public class Client extends JFrame{
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         
         getContentPane().setBackground(Color.BLACK);        
-        setSize(700, 550);   
+        setSize(600, 550);   
         setResizable(false);
-        setLocation(760,200);    //to appear this CLIENT frame at a location of 760,200 on our system
-        setUndecorated(false);      //minimise and drag options not available to user   
+        setLocation(630,100);    //to appear this CLIENT frame at a location of 630,100 on our system
+        setUndecorated(true);      //minimise and drag options not available to user   
         setLayout(null); 
         
         p1 = new JPanel();     
         p1.setLayout(null);
         p1.setBackground(new Color(145, 61, 136)); 
-        p1.setBounds(0,0, 700, 70);
+        p1.setBounds(0,0, 600, 70);
         add(p1);
          
         JLabel l1 = new JLabel("CLIENT");      
         l1.setFont(new Font("Verdana", Font.BOLD, 18));
         l1.setForeground(Color.WHITE);
-        l1.setBounds(300, 15 , 250, 40); 
+        l1.setBounds(250, 15 , 250, 40); 
         p1.add(l1); 
         
         exit = new JButton("EXIT");
-        exit.setBounds(600, 15, 80, 40);
+        exit.setBounds(500, 15, 80, 40);
         exit.setBackground(new Color(204,0,0));
         exit.setForeground(Color.WHITE);
         exit.setToolTipText("Disconnect from chat");
@@ -91,7 +91,7 @@ public class Client extends JFrame{
         sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         
         a1 = new JTextArea();
-        a1.setBounds(10, 85, 680, 410);
+        a1.setBounds(10, 85, 580, 410);
         a1.setBackground(new Color(228,223,237));         
         a1.setFont(new Font("Verdana", Font.PLAIN, 14));
         a1.setBorder(new LineBorder(Color.BLACK));
@@ -99,13 +99,13 @@ public class Client extends JFrame{
         a1.setLineWrap(true);
         a1.setWrapStyleWord(true);
         
-        sp.setBounds(10, 85, 680, 410);
+        sp.setBounds(10, 85, 580, 410);
         sp.getViewport().setBackground(Color.WHITE);
         sp.getViewport().add(a1);
         add(sp);
         
         t1 = new JTextField();     
-        t1.setBounds(10, 505, 580, 35);
+        t1.setBounds(10, 505, 480, 35);
         t1.setText("Type your message here");
         t1.setBackground(Color.white);
         t1.setForeground(new Color(153,153,153));
@@ -123,7 +123,7 @@ public class Client extends JFrame{
        
           
         send = new JButton("Send");
-        send.setBounds(600, 505, 90, 35);
+        send.setBounds(500, 505, 90, 35);
         send.setBackground(new Color(0,204,0));
         send.setForeground(Color.BLACK);
         send.setFont(new Font("Verdana", Font.PLAIN, 14));
