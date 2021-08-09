@@ -31,8 +31,8 @@ public class Client extends JFrame{
         getContentPane().setBackground(Color.BLACK);        
         setSize(700, 550);   
         setResizable(false);
-        setLocation(760,200);    //to appear this CLIENT frame at a location of 600,50 on our system
-        setUndecorated(true);      //minimise and drag options to be available to user   
+        setLocation(760,200);    //to appear this CLIENT frame at a location of 760,200 on our system
+        setUndecorated(false);      //minimise and drag options not available to user   
         setLayout(null); 
         
         p1 = new JPanel();     
